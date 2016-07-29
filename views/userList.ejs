@@ -1,0 +1,14 @@
+<h1> User index page </h1>
+
+<ul>
+    <% for ( var i = 0 ; i < users.length; i++ ) { %>
+        <li>  
+            <a href ="/user/destroy/<%=users[i].id %>" >DELETE</a>
+            |
+            <%= users[i].name %>
+        </li>
+        
+    <% } %>
+</ul>
+
+<a href="/user/page">Create new</a>
